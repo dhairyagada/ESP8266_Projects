@@ -1,22 +1,23 @@
 #include <ESP8266WiFi.h>
  
-const char* ssid = "linux";               // Wifi Username
-const char* password = "012345678";
+const char* ssid = "linux";               // Enter Wifi Username
+const char* password = "012345678";       // Enter Wifi Password
  
-int testPin = 14; //GPIO14 -D5
+int testPin = 14; //GPIO14 -D5            // Test Led
 
-int left_fw = 13; // GPIO13 -D7
+int left_fw = 13; // GPIO13 -D7           // Pins for left motor
 int left_bw = 15; // GPIO15 -D8
 
-int right_fw = 0; // GPIO0 -D3
+int right_fw = 0; // GPIO0 -D3            // Pins for right motor
 int right_bw = 2; // GPIO2 -D4
 
 WiFiServer server(80);
  
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200);                   // Declaring the baud rate for displaying data on serial port
   delay(10);
  
+ /*----------------------------------- Initializing Pins as Output -----------------------------------*/
   pinMode(left_fw, OUTPUT);
   digitalWrite(left_fw, LOW);
   pinMode(left_bw, OUTPUT);
@@ -28,8 +29,7 @@ void setup() {
   pinMode(testPin, OUTPUT);
   digitalWrite(testPin, LOW);
 
-  
-  // Connect to WiFi network
+  /*----------------------------------- Connecting to WiFi -----------------------------------*/
   Serial.println();
   Serial.println();
   Serial.print("Connecting to ");
@@ -167,4 +167,3 @@ void loop() {
   Serial.println("");
  
 }
- 
