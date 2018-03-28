@@ -33,3 +33,18 @@ Starting with 1.6.4, Arduino allows installation of third-party platform package
 |   D10	|   1	|      
 
 <b>For Eg:</b> DigitalWrite on Pin 16 declared in the code gives output on D0 of Hardware   
+
+## APK's for WiFi Controlled Bot are included in this repository
+
+<b> BotControl Version 1 </b> does not inlclude functions for Hard Left and Hard Right turns. <br>
+[BotControl_V1](https://github.com/dhairyagada/ESP8266_Projects/blob/master/BotControl_V1.apk)  <br> <br>
+<b> BotControl Version 2 </b> includes functions for Hard Left and Hard Right turns. <br>
+[BotControl_V2](https://github.com/dhairyagada/ESP8266_Projects/blob/master/BotControl_V2.apk)  
+
+## MIT App Inventer Screenshots
+
+### The Above Mentioned Apps were made using MIT App Inventer
+
+<img src="./Screen0_Logic.png" width=70%>  
+<br>
+<img src="./Screen1_Logic.png" width=70%>
